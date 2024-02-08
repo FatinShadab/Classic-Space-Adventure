@@ -4,6 +4,11 @@
 
 "Classic Space Adventure" is a beginner-friendly 2D space shooter game developed using Pygame. The game places the player in control of a spaceship, tasked with navigating through space, shooting enemies, and avoiding collisions. The project was created as a resource for the GD4B (Game Development for Beginners) workshop organized by the UIU App Forum.
 
+<p align="center">
+    <img src="images/ss2.png" alt="Image 1" width="45%">
+    <img src="images/ss1.png" alt="Image 2" width="45%">
+</p>
+
 ## Workshop Goal
 
 The primary goal of the GD4B workshop is to provide participants with fundamental knowledge about game development concepts using Pygame and Python. The workshop focuses on:
