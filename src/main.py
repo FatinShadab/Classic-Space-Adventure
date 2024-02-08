@@ -85,7 +85,7 @@ class Ship:
         self.image = pygame.transform.scale(self.image, (100, 100))
         
         # Set initial coordinates using pygame Vector2
-        self.coord = pygame.math.Vector2(15 , 40)
+        self.coord = pygame.math.Vector2(15 , 30)
         self.hp = 100
         
     def move_left(self):
@@ -130,7 +130,7 @@ class Game:
         self.score = 0
         
         # Set window dimensions and cell size
-        self.windowRow = 48
+        self.windowRow = 38
         self.windowCol = 36
         self.cellSize = 20
         
@@ -190,15 +190,15 @@ class Game:
     
     def __render_menu_scene(self):
         # Render the menu scene with instructions
-        pygame.draw.rect(self.mainWindowSurface, "Black", (0, self.height//2 - 150, self.width, self.height/3))
-        pygame.draw.rect(self.mainWindowSurface, "Blue", (10, self.height//2 - 140, self.width - 20, self.height/3 - 20))
+        pygame.draw.rect(self.mainWindowSurface, "Black", (0, self.height//2 - 150, self.width, self.height/2.5))
+        pygame.draw.rect(self.mainWindowSurface, "Blue", (10, self.height//2 - 140, self.width - 20, self.height/2.5 - 20))
         if self.player.hp != 100:
             self.mainWindowSurface.blit(self.font.render("Press Enter To Play Again !", False, "Black"), (150, self.height - 500))
         else:
-            self.mainWindowSurface.blit(self.font.render("Press Enter To Play!", False, "Black"), (200, self.height - 600))
-            self.mainWindowSurface.blit(self.font.render("Press 'ESC' To Pause", False, "Black"), (200, self.height - 500))
-            self.mainWindowSurface.blit(self.font.render("Press 'Arrow KEYS' To Move", False, "Black"), (150, self.height - 450))
-            self.mainWindowSurface.blit(self.font.render("Press 'SPACE' To Shoot", False, "Black"), (200, self.height - 400))
+            self.mainWindowSurface.blit(self.font.render("Press Enter To Play!", False, "Black"), (200, self.height - 500))
+            self.mainWindowSurface.blit(self.font.render("Press 'ESC' To Pause", False, "Black"), (200, self.height - 400))
+            self.mainWindowSurface.blit(self.font.render("Press 'Arrow KEYS' To Move", False, "Black"), (150, self.height - 350))
+            self.mainWindowSurface.blit(self.font.render("Press 'SPACE' To Shoot", False, "Black"), (200, self.height - 300))
     
     def __render_pause_scene(self):
         # Render the pause scene
